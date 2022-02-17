@@ -721,20 +721,7 @@ body{
   line-height: 1.16;
 }
 
-/*estilos contacto formulario*/
-
-.contenedorGeneral{
-  display: flex;
-}
-
-.contenedorIzquierda{
-  margin: auto;
-  margin-left: left;
-  padding-left: 20px;
-}
-
-.contenedorDerecha{
-  margin: auto;
-  margin-left: left;
-  padding-left: 10px;
+.textSpecialContacto{
+  font-family: $secondary-family;
+  font-size: small;
 }

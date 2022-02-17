@@ -54,90 +54,62 @@
     </div>
   </div>
   <!--finaliza portada-->
-  <div class="contenedorGeneral">
-    <div class="contenedorIzquierda">
-      <div>
-        <h6 class="text-white font-weight-light mb-0">¿Tenés alguna preguna? Llamanos</h6>
-        <h3 class="text-white font-weight-bold">+54 9 999 9999</h3>
-      </div>
-      <div>
-        <h6 class="text-white font-weight-light mb-0">Soporte por correo electrónico.</h6>
-        <h3 class="text-white font-weight-bold">hola@cryptogestor.com.ar​</h3>
-        <h7 class="text-white font-weight-light mb-0">Escríbenos un correo y te contactaremos.</h7>
-      </div>
-      <div>
-        <h6 class="text-white font-weight-light mb-0">Nuestras oficinas.</h6>
-        <h3 class="text-white font-weight-bold">España</h3>
-        <h7 class="text-white font-weight-light mb-0">Barcelona</h7>
-        <h3 class="text-white font-weight-bold">Argentina</h3>
-        <h7 class="text-white font-weight-light mb-0">Ciudad de Mendoza</h7>
-      </div>
-    </div> 
-  <div class="container containerForm p-4 m-2 contenedorDerecha">
-    <form action="recibe.html" method="POST" enctype="multipar/form-data">
-      <h2>Suscribite a nuestro newsletter</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="first">Nombre</label>
-            <input type="text" class="form-control" placeholder="Escribí tu nombre acá" id="first" required>
-          </div>
-        </div>  
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="last">Apellido</label>
-            <input type="text" class="form-control" placeholder="Escribí tu apellido acá" id="last" required>
-          </div>
-        </div>        
-      </div>  
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="company">Tu empresa</label>
-            <input type="text" class="form-control" placeholder="Escribí el nombre de tu empresa" id="company" required>
-          </div>  
-        </div>          
-        <div class="col-md-6">  
-          <div class="form-group">
-            <label for="phone">Número de teléfono</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Escribí tu celular sin el 0 y sin 15" required>
-          </div>
-        </div>        
-      </div> 
-      <div class="row">
-        <div class="col-md-6">  
-          <div class="form-group">
-            <label for="email">Tu email</label>
-            <input type="email" class="form-control" id="email" placeholder="Escribí tu email acá" required>
-          </div>
-        </div>        
-      </div> 
-      <label for="contact-preference">¿Qué temas te interesan más?</label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Marketing
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Publicidad
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Redes sociales
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Programación
-        </label>
-      </div>  
-      <button type="submit" class="btn btn-outline-warning">Enviar</button>
-    </form>
-  </div>  
+<!--Text antes de form-->
+
+<div class="container">     
+  <div class="row">
+    <div class="text-white col-12 mb-0 p-1 pt-5 principalText">
+      <h3 class="text-white font-weight-bold mb-0">¿Tenés alguna pregunta? Llamanos.</h3>
+      <p class="lead text-white font-weight-normal">+54 9 999 99 99​</p>
+    </div>
+  </div>
+</div>
+<div class="container">     
+  <div class="row">
+    <div class="text-white col-12 mb-md-10 p-1 principalText">
+      <h3 class="text-white font-weight-bold mb-0">Soporte por correo electrónico</h3>
+      <p class="lead text-white font-weight-normal">hola@cryptogestor.es</p>
+    </div>
+  </div>
+</div>
+<div class="container">     
+  <div class="row">
+    <div class="text-white col-12 mb-md-10 p-1 pb-5 principalText">
+      <h3 class="text-white font-weight-bold mb-0">Nuestras oficinas</h3>
+      <p class="lead text-white font-weight-normal mb-0">Barcelona, España​</p>
+      <p class="lead text-white font-weight-normal">Mendoza, Argentina​</p>
+    </div>
+  </div>
+</div>
+
+<!--finaliza Text antes de form-->
     
 
+  <div class="contact-form container-fluid no-left-padding no-right-padding">
+    <!-- Container -->
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header align_left  text-white">
+        <p>Llená nuestro formulario y estaremos en contacto con vos.</p>
+      </div><!-- Section Header /- -->
+      <form class="row" action="recibe.html" method="POST" enctype="multipar/form-data">
+        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
+          <input type="text" class="form-control" placeholder="Tu nombre" name="contact-name" id="input_name" required />
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
+          <input type="text" class="form-control" placeholder="Tu email" name="contact-email" id="input_email" required />
+        </div>
+        
+        <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+          <textarea class="form-control" placeholder="Tu mensaje..." name="textarea-message" id="textarea_message" required></textarea>
+        </div>
+        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+          <button title="Send Message" type="submit" id="btn_submit" name="post" class="btn btn-outline-warning">Enviar mensaje</button>
+          
+        </div>
+        <div id="alert-msg" class="alert-msg"></div>
+      </form>
+    </div><!-- Container /- -->
   </div>
   <!--Inicia Formulario-->
   

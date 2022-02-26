@@ -55,52 +55,70 @@
   </div>
   <!--finaliza portada-->
 <!--Text antes de form-->
-
-<div class="container">     
+<!--<div class="container">     
   <div class="row">
-    <div class="text-white col-12 mb-0 p-1 pt-5 principalText">
+    <div class="col-12 col-md-6 col-lg-3 pt-5 pb-5 box--propiedades text-center">
       <h3 class="text-white font-weight-bold mb-0">¿Tenés alguna pregunta? Llamanos.</h3>
       <p class="lead text-white font-weight-normal">+54 9 999 99 99​</p>
     </div>
-  </div>
-</div>
-<div class="container">     
-  <div class="row">
-    <div class="text-white col-12 mb-md-10 p-1 principalText">
+  </div>-->
+  <div class="container mt-2">     
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-3 pt-5 pb-5 box--propiedades text-center">
       <h3 class="text-white font-weight-bold mb-0">Soporte por correo electrónico</h3>
       <p class="lead text-white font-weight-normal">hola@cryptogestor.es</p>
     </div>
-  </div>
-</div>
-<div class="container">     
-  <div class="row">
-    <div class="text-white col-12 mb-md-10 p-1 pb-5 principalText">
-      <h3 class="text-white font-weight-bold mb-0">Nuestras oficinas</h3>
-      <p class="lead text-white font-weight-normal mb-0">Barcelona, España​</p>
-      <p class="lead text-white font-weight-normal">Mendoza, Argentina​</p>
+
+    <div class="col-12 col-md-6 col-lg-3 pt-5 pb-5 box--propiedades text-center">
+      <h3 class="text-white font-weight-bold mb-0">Soporte por correo electrónico</h3>
+      <p class="lead text-white font-weight-normal">hola@cryptogestor.es</p>
     </div>
-  </div>
-</div>
+  
+    <div class="col-12 col-md-6 col-lg-3 pt-5 pb-5 box--propiedades text-center">
+      <h3 class="text-white font-weight-bold mb-0">Nuestras oficinas</h3>
+      <p class="lead text-white font-weight-normal mb-0">Mendoza, Argentina​</p>
+      <p class="lead text-white font-weight-normal">Barcelona, España​​</p>
+    </div>
+    </div>
+  </body>
+
+
 
 <!--finaliza Text antes de form-->
     
-
+<!--<section class="col-md-12 col-sm-12 col-xs-12">-->
   <div class="contact-form container-fluid no-left-padding no-right-padding">
     <!-- Container -->
     <div class="container">
       <!-- Section Header -->
-      <div class="section-header align_left  text-white">
-        <p>Llená nuestro formulario y estaremos en contacto con vos.</p>
-      </div><!-- Section Header /- -->
-      <form class="row" action="recibe.html" method="POST" enctype="multipar/form-data">
-        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
-          <input type="text" class="form-control" placeholder="Tu nombre" name="contact-name" id="input_name" required />
+      <form class="row" action="https://formsubmit.co/hola@cryptogestor.com.ar" method="POST" enctype="multipar/form-data">
+        <div class="form-group col-md-6">
+          <label class="text-white font-weight-normal mb-0">Nombre y Apellido</label>
+          <input type="text" class="form-control" placeholder="Nombre y Apellido" name="contact-name" id="input_name" required />
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 form-group">
-          <input type="text" class="form-control" placeholder="Tu email" name="contact-email" id="input_email" required />
+        <div class="form-group col-md-6">
+          <label class="text-white font-weight-normal mb-0">Teléfono</label>
+          <input type="number" class="form-control" placeholder="Teléfono" name="contact-telefono" id="input_teléfono" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label class="text-white font-weight-normal mb-0">Correo electrónico</label>
+          <input type="text" class="form-control" placeholder="Correo electrónico" name="contact-email" id="input_email" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="exampleFormControlSelect1" class="text-white font-weight-normal mb-0">Nivel experiencia cryptomonedas</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Ninguna</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="text-white font-weight-normal mb-0">País de residencia</label>
+          <input type="text" class="form-control" placeholder="País de Residencia" name="contact-country" id="input_country" required />
         </div>
         
         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+          <label class="text-white font-weight-normal mb-0">Escribe un mensaje</label>
           <textarea class="form-control" placeholder="Tu mensaje..." name="textarea-message" id="textarea_message" required></textarea>
         </div>
         <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -111,13 +129,23 @@
       </form>
     </div><!-- Container /- -->
   </div>
+  <div class="form-check mt-3 mb-3 text-center">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">He leído y acepto los <b class="text-warning">términos y condiciones de uso</b> y la <b class="text-warning">política de privacidad.</b></label>
+  </div>
+  <div class="form-check text-center">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Acepto recibir notificaciones de parte de Crypto Gestor.</label>
+  </div>
+
+<!--</section>-->
   <!--Inicia Formulario-->
   
   <!--Cierre formulario-->
   
 
   <!--Inicia footer-->
-  <div id="siteFooter" class="bgColor py-3">
+  <div id="siteFooter" class="bgColor py-3 mt-5">
     <div class="container row mx-auto">
       <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0">
         <div class="footer__div">Crypto Gestor</div>
@@ -140,13 +168,14 @@
         <div class="footer__div">Contacto</div>
           <ul class="list-unstyled">
             <li>+ 9 999 9999 999 </li>
-            <li>ejemplo@cryptogestor.com</li>
+            <li>hola@cryptogestor.es</li>
             </ul>    
         </div>
       <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0" >
         <div class="footer__div">Redes Sociales</div>
           <ul class="list-unstyled">
             <li>
+              
               <a href="https://www.instagram.com/crypto.gestor/" class="text-white" target="_blank">Instagram</a>
             </li>
             <li>
@@ -157,7 +186,7 @@
       <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0" >
         <div class="footer__div">Escribinos</div>
           <ul class="list-unstyled">
-            <li>ejemplo@cryptogestor.com</li>
+            <li>hola@cryptogestor.es</li>
           </ul>    
       </div>      
     </div>        
